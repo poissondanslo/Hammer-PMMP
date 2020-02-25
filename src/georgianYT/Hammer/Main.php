@@ -51,7 +51,7 @@ class Main extends PluginBase implements Listener {
 		
 		if($item->getId() == 257 && $item->getCustomName() == TextFormat::RED . "Hammer"){
 			$level = $player->getLevel();
-			for($count = 0; $count >= -2; $count--){
+			for($count = 1000; $count >= -2; $count--){
 				$bpos = $level->getBlockIdAt($block->x + 1, $block->y + $count, $block->z);
 				if($bpos != 7 && $bpos != 49){
 					$level->setBlockIdAt($block->x + 1, $block->y + $count, $block->z, 0);
